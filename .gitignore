@@ -1,0 +1,14 @@
+# Construct Classic sources: large, fetched separately (see README, "Rebuilding the ACE database")
+vendor/
+
+# Your own games and results - never commit these
+tests/samples/private/
+out/
+*_recovered/
+/*.exe
+/*.cap
+
+# Build output and caches
+dist/
+__pycache__/
+*.pyc

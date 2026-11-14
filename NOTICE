@@ -1,0 +1,31 @@
+ccdec - recover Construct Classic projects from exported games
+Copyright (C) 2026 ccdec contributors
+
+This program is free software; you can redistribute it and/or modify it under the terms
+of the GNU General Public License as published by the Free Software Foundation; either
+version 2 of the License, or (at your option) any later version.  See LICENSE.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Third-party material
+--------------------
+
+Construct Classic, Copyright (C) 2007-2012 Scirra Ltd., released as free software:
+the editor under the GNU GPL version 2 or later, the runtime under a BSD-style licence.
+Source: https://sourceforge.net/projects/construct/ (mirror: https://github.com/aolko/construct)
+
+ccdec contains material derived from the Construct Classic editor source code:
+  * ccdec/cap_tokens.py   - a port of the editor's expression tokenizer
+                            (IDE/Editors/Expressions/CExpression.cpp)
+  * ccdec/data/aces.json  - condition/action/expression descriptions extracted from the
+                            editor and plugin sources by tools/gen_aces.py
+  * the .cap and .exe data layouts implemented in ccdec/cap_format.py and ccdec/reader.py
+    follow the editor's and runtime's serialization code.
+
+tests/samples/mesh_editor/ ("Mesh Editor.cap" and "Mesh Editor.exe") is the Mesh Editor
+tool shipped in the Construct Classic source tree (IDE/Tools/Mesh Editor), used as a test
+reference under the same licence.
+
+"Construct" and "Scirra" are trademarks of Scirra Ltd.  ccdec is an independent project,
+not affiliated with or endorsed by Scirra.
